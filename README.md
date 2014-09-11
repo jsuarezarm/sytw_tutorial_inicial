@@ -12,4 +12,24 @@ Para instalarlo ejecutaremos el comando siguiente (hay que hacerlo como usuario 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 ~~~
 
-Si no tiene el programa curl instalado, deberá hacerlo.
+Si no tiene el programa curl instalado, deberá hacerlo antes.
+
+
+
+## Instalación de Git
+=====================
+
+Para instalar git:
+
+~~~
+sudo apt-get install git
+~~~
+
+Una vez instalado procederemos a configurarlo.
+
+Lo primero es añadir un nombre y un correo electrónico.
+~~~
+git config --global user.name "Nombre Apellido"
+git config --global user.email "tu@correo.com"
+~~~
+
