@@ -1,7 +1,3 @@
-require 'kramdown'
-
-puts Kramdown::Document.new(text).to_html
-
 # Instalación de Ruby (rvm) y Git
 
 ## Instalación de Ruby (rvm)
