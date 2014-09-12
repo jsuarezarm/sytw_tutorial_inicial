@@ -3,97 +3,90 @@
 <h2 id="instalacin-de-ruby-rvm">Instalación de Ruby (rvm)</h2>
 <p>Instalaremos la versión rvm de Ruby. Podemos encontrar toda la documentación en http://rvm.io/</p>
 
-<p>Para instalarlo ejecutaremos el comando siguiente (hay que hacerlo como usuario sin privilegios):
-~~~
-\curl -sSL https://get.rvm.io | bash -s stable
-~~~</p>
+<p>Para instalarlo ejecutaremos el comando siguiente (hay que hacerlo como usuario sin privilegios):</p>
 
-<p>Si no tiene el programa curl instalado, deberá hacerlo antes.
-~~~
-sudo apt-get install curl
-~~~</p>
+<pre><code>\curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
 
-<p>Después de haber instalado rvm, instalamos Ruby. En mi caso, la versión 2.0.0.
-~~~
-rvm install 2.0.0
-~~~</p>
+<p>Si no tiene el programa curl instalado, deberá hacerlo antes.</p>
+
+<pre><code>sudo apt-get install curl
+</code></pre>
+
+<p>Después de haber instalado rvm, instalamos Ruby. En mi caso, la versión 2.0.0.</p>
+
+<pre><code>rvm install 2.0.0
+</code></pre>
 
 <p><img src="images/rvm200.png" alt="Instalación Ruby" title="Instalación de la versión de Ruby 2.0.0" /></p>
 
-<p>Tenemos que añadir una línea al fichero ~/.bash_profile con el siguiente comando:
-~~~
-echo “source $HOME/.rvm/scripts/rvm” » ~/.bash_profile
-~~~</p>
+<p>Tenemos que añadir una línea al fichero ~/.bash_profile con el siguiente comando:</p>
 
-<p>Ahora podemos indicar que se haga uso de la versión 2.0.0 de Ruby.
-~~~
-rvm use 2.0.0
-~~~</p>
+<pre><code>echo "source $HOME/.rvm/scripts/rvm" &gt;&gt; ~/.bash_profile
+</code></pre>
+
+<p>Ahora podemos indicar que se haga uso de la versión 2.0.0 de Ruby.</p>
+
+<pre><code>rvm use 2.0.0
+</code></pre>
 
 <p>Como vemos en la imagen siguiente, es probable que antes de ejecutar el comando anterior ejecutemos: <code>/bin/bash --login</code></p>
 
 <p><img src="images/rvm_use.png" alt="rvm use" title="Configurar el uso de la versión 2.0.0" /></p>
 
 <h2 id="instalacin-de-git">Instalación de Git</h2>
-<p>Para instalar git:
-~~~
-sudo apt-get install git
-~~~</p>
+<p>Para instalar git:</p>
+
+<pre><code>sudo apt-get install git
+</code></pre>
 
 <p>Una vez instalado procederemos a configurarlo.</p>
 
-<p>Lo primero es añadir un nombre y un correo electrónico.
-~~~
-git config –global user.name “Nombre Apellido”
-git config –global user.email “tu@correo.com”
-~~~</p>
+<p>Lo primero es añadir un nombre y un correo electrónico.</p>
 
-<p>Seguidamente, configuraremos git para que no sea necesario introducir la contraseña cada vez que hagamos una actualización.
-~~~
-git config –global credential.helper cache
-~~~</p>
+<pre><code>git config --global user.name "Nombre Apellido"
+git config --global user.email "tu@correo.com"
+</code></pre>
 
-<p>También haremos que todos los cambios se empujen siempre en el repositorio git.
-~~~
-git config –global push.default “matching”
-~~~</p>
+<p>Seguidamente, configuraremos git para que no sea necesario introducir la contraseña cada vez que hagamos una actualización.</p>
 
-<p>Y por último, configuraremos git para que se eviten los commits innecesarios.
-~~~
-git config –global branch.autosetuprebase always
-~~~</p>
+<pre><code>git config --global credential.helper cache
+</code></pre>
 
-<p>Si queremos ver la configuración de git, ejecutaremos el comando siguiente:
-~~~
-git config –list
-~~~</p>
+<p>También haremos que todos los cambios se empujen siempre en el repositorio git.</p>
+
+<pre><code>git config --global push.default "matching"
+</code></pre>
+
+<p>Y por último, configuraremos git para que se eviten los commits innecesarios.</p>
+
+<pre><code>git config --global branch.autosetuprebase always
+</code></pre>
+
+<p>Si queremos ver la configuración de git, ejecutaremos el comando siguiente:</p>
+
+<pre><code>git config --list
+</code></pre>
 
 <p><img src="images/git_config.png" alt="Ejemplo" title="Ejemplo de configuración de Git" /></p>
 
 <h2 id="instalacin-de-gemas">Instalación de gemas</h2>
-<p>Para instalar una gema, lo haremos con el comando:
-~~~
-gem install “nombre_gema”
-~~~</p>
+<p>Para instalar una gema, lo haremos con el comando:</p>
+
+<pre><code>gem install "nombre_gema"
+</code></pre>
 
 <h3 id="instalacin-de-la-gema-sinatra">Instalación de la gema sinatra</h3>
-<p>Siguiendo el comando anterior, instalaremos la gema sinatra.
-~~~
-gem install sinatra
-~~~</p>
+<p>Siguiendo el comando anterior, instalaremos la gema sinatra.</p>
+
+<pre><code>gem install sinatra
+</code></pre>
 
 <p><img src="images/sinatra.png" alt="Sinatra" title="Instalación de la gema sinatra" /></p>
 
-<h3 id="instalacin-de-la-gema-tweeter">Instalación de la gema tweeter</h3>
-<p>También instalaremos la gema tweeter.
-~~~
-gem install tweeter
-~~~</p>
+<h3 id="instalacin-de-la-gema-twitter">Instalación de la gema twitter</h3>
+<p>También instalaremos la gema twitter.</p>
 
-<p><img src="images/tweeter1.png" alt="Tweeter1" title="Instalación fallida de la gema tweeter" /></p>
+<pre><code>gem install twitter
+</code></pre>
 
-<p>Como vemos, no se encuentra disponible dicha gema.</p>
-
-<p>Buscando más información, vemos que la gema ha sido retirada, pero sera descargada en caso de que instalemos otra que dependa de ella.</p>
-
-<p><img src="images/tweeter2.png" alt="Tweeter2" /></p>
