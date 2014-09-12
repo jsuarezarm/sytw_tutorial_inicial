@@ -20,6 +20,20 @@ rvm install 2.0.0
 
 ![Instalación Ruby](images/rvm200.png "Instalación de la versión de Ruby 2.0.0")
 
+Tenemos que añadir una línea al fichero ~/.bash_profile con el siguiente comando:
+~~~
+echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
+~~~
+
+Ahora podemos indicar que se haga uso de la versión 2.0.0 de Ruby.
+~~~
+rvm use 2.0.0
+~~~
+
+Como vemos en la imagen siguiente, es probable que antes de ejecutar el comando anterior ejecutemos: `/bin/bash --login`
+
+![rvm use](images/rvm_use.png "Configurar el uso de la versión 2.0.0")
+
 
 ## Instalación de Git
 Para instalar git:
