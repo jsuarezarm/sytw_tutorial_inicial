@@ -88,16 +88,8 @@ gem install sinatra
 
 ![Sinatra](images/sinatra.png "Instalación de la gema sinatra")
 
-### Instalación de la gema tweeter
-También instalaremos la gema tweeter.
+### Instalación de la gema twitter
+También instalaremos la gema twitter.
 ~~~
-gem install tweeter
+gem install twitter
 ~~~
-
-![Tweeter1](images/tweeter1.png "Instalación fallida de la gema tweeter")
-
-Como vemos, no se encuentra disponible dicha gema.
-
-Buscando más información, vemos que la gema ha sido retirada, pero sera descargada en caso de que instalemos otra que dependa de ella.
-
-![Tweeter2](images/tweeter2.png)
