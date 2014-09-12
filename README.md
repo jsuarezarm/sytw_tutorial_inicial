@@ -1,4 +1,4 @@
-# Tutorial de Tareas Iniciales de la asignatura Sistemas y Tecnologías Web
+# Instalación de Ruby (rvm) y Git
 
 ## Instalación de Ruby (rvm)
 Instalaremos la versión rvm de Ruby. Podemos encontrar toda la documentación en http://rvm.io/
