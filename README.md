@@ -48,3 +48,5 @@ Si queremos ver la configuración de git, ejecutaremos el comando siguiente:
 ~~~
 git config --list
 ~~~
+
+![Ejemplo](images/git_config.png"Ejemplo de configuración de Git")
