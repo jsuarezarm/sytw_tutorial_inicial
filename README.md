@@ -35,6 +35,7 @@ Como vemos en la imagen siguiente, es probable que antes de ejecutar el comando 
 ![rvm use](images/rvm_use.png "Configurar el uso de la versión 2.0.0")
 
 
+
 ## Instalación de Git
 Para instalar git:
 ~~~
@@ -72,4 +73,18 @@ git config --list
 ![Ejemplo](images/git_config.png "Ejemplo de configuración de Git")
 
 
-## Instalación de las gemas 
+
+## Instalación de gemas
+Para instalar una gema, lo haremos con el comando:
+~~~
+gem install "nombre_gema"
+~~~
+
+### Instalación de la gema sinatra
+Siguiendo el comando anterior, instalaremos la gema sinatra.
+~~~
+gem install sinatra
+~~~
+
+![Sinatra](images/sinatra.png "Instalación de la gema sinatra")
+
