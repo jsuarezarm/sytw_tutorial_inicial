@@ -5,7 +5,7 @@ Instalaremos la versión rvm de Ruby. Podemos encontrar toda la documentación e
 
 Para instalarlo ejecutaremos el comando siguiente (hay que hacerlo como usuario sin privilegios):
 ~~~
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
+\curl -sSL https://get.rvm.io | bash -s stable
 ~~~
 
 Si no tiene el programa curl instalado, deberá hacerlo antes.
@@ -13,6 +13,12 @@ Si no tiene el programa curl instalado, deberá hacerlo antes.
 sudo apt-get install curl
 ~~~
 
+Después de haber instalado rvm, instalamos Ruby. En mi caso, la versión 2.0.0.
+~~~
+rvm install 2.0.0
+~~~
+
+![Instalación Ruby](images/rvm200.png "Instalación de la versión de Ruby 2.0.0")
 
 
 ## Instalación de Git
@@ -50,3 +56,6 @@ git config --list
 ~~~
 
 ![Ejemplo](images/git_config.png "Ejemplo de configuración de Git")
+
+
+## Instalación de las gemas 
